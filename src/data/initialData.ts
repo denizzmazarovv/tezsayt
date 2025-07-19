@@ -14,26 +14,26 @@ export const initialProjects: Project[] = [
       uz: 'Zamonaviy barber-shop sayti: Telegram’ga tezkor yozilish va ochiq narxlar ro‘yxati'
     },
     image: '/images/razor.webp',
-    category: 'ecommerce',
+    category: 'landing',
     technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
     url: 'https://barbercraft.netlify.app/'
   },
   {
     id: '2',
     title: {
-      ru: 'Лендинг IT-компании',
-      en: 'IT Company Landing',
-      uz: 'IT kompaniyasi lending sahifasi'
+      ru: 'Сайт, который заменяет администратора',
+      en: 'A site that replaces the administrator',
+      uz: 'Administratorni almashtiradigan sayt'
     },
     description: {
-      ru: 'Яркий и современный лендинг для привлечения клиентов IT-услуг',
-      en: 'Bright and modern landing page to attract IT service clients',
-      uz: 'IT xizmatlar mijozlarini jalb qilish uchun yorqin va zamonaviy lending sahifa'
+      ru: 'Сайт для салона красоты с онлайн-записью в Telegram и автоматическим отображением актуальных цен из таблицы',
+      en: 'Beauty salon website with Telegram booking and real-time price updates from a spreadsheets',
+      uz: 'Go‘zallik saloni uchun sayt: Telegram orqali yozilish va jadvallardan avtomatik yangilanadigan narxlar'
     },
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/salonSpa.webp',
     category: 'landing',
-    technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-    url: '#'
+    technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
+    url: 'https://salonbeautyspa.netlify.app/'
   },
   {
     id: '3',
@@ -58,35 +58,32 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'basic',
     name: {
-      ru: 'Базовый',
-      en: 'Basic',
-      uz: 'Asosiy'
+      ru: 'Необходимый',
+      en: 'Necessary',
+      uz: 'Zarurlii'
     },
     price: {
-      ru: 'от 300$',
-      en: 'from $300',
-      uz: '300$ dan'
+      ru: 'от 100$',
+      en: 'from $100',
+      uz: '100$ dan'
     },
     features: {
       ru: [
         'Лендинг страница',
         'Адаптивный дизайн',
         'Базовая SEO оптимизация',
-        'Форма обратной связи',
         'Месяц технической поддержки'
       ],
       en: [
         'Landing page',
         'Responsive design',
         'Basic SEO optimization',
-        'Contact form',
         'One month technical support'
       ],
       uz: [
         'Lending sahifa',
         'Moslashuvchan dizayn',
         'Asosiy SEO optimallashtirish',
-        'Aloqa formasi',
         'Bir oylik texnik yordam'
       ]
     }
@@ -94,39 +91,39 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'standard',
     name: {
-      ru: 'Стандарт',
-      en: 'Standard',
-      uz: 'Standart'
+      ru: 'Индивидуальный',
+      en: 'Individual',
+      uz: 'Individual'
     },
     price: {
-      ru: 'от 800$',
-      en: 'from $800',
-      uz: '800$ dan'
+      ru: 'от 150-300$',
+      en: 'from $150-300',
+      uz: '150-300$ dan'
     },
     features: {
       ru: [
-        'Многостраничный сайт',
-        'Адаптивный дизайн',
-        'Полная SEO оптимизация',
+        '0$ - Тариф (необходимый)',
+        '50$ — Мульти-язычность RU, UZB, ENG',
+        '50$ — Форма отправки в Телеграм + Таблицу',
+        'Полная оптимизация',
         'Админ-панель',
-        'Интеграции с сервисами',
-        '3 месяца технической поддержки'
+        'Интеграции с сервисами'
       ],
       en: [
-        'Multi-page website',
-        'Responsive design',
-        'Full SEO optimization',
+        '0$ - Package (required)',
+        '$50 — Multilanguage: RU, UZB, ENG',
+        '$50 — Form submission to Telegram + Spreadsheet',
+        'Full optimization',
         'Admin panel',
         'Service integrations',
-        '3 months technical support'
       ],
       uz: [
-        'Ko\'p sahifali veb-sayt',
-        'Moslashuvchan dizayn',
-        'To\'liq SEO optimallashtirish',
+        '0$ - Tarif (majburiy)',
+        '50$ — Ko‘p tilli: RU, UZB, ENG',
+        '50$ — Telegram va Jadvalga yuborish formasi',
+        'To‘liq optimizatsiya',
         'Admin panel',
-        'Xizmatlar bilan integratsiya',
-        '3 oylik texnik yordam'
+        'Xizmatlarga integratsiya',
       ]
     },
     highlighted: true
