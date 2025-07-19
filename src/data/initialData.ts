@@ -13,7 +13,7 @@ export const initialProjects: Project[] = [
       en: 'Modern barbershop website with instant booking to Telegram and a clear price list',
       uz: 'Zamonaviy barber-shop sayti: Telegram’ga tezkor yozilish va ochiq narxlar ro‘yxati'
     },
-    image: '/public/images/razor.png',
+    image: '/images/razor.png',
     category: 'ecommerce',
     technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
     url: 'https://barbercraft.netlify.app/'
