@@ -66,10 +66,10 @@ const Portfolio: React.FC<PortfolioProps> = ({ currentLanguage, projects }) => {
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-3">
                     <button className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors">
-                    <a href='{project.url}' target='_blank' rel='noopener' className='bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors'><Eye className="w-5 h-5" /></a>
+                    <a href='{project.url}' target='_blank' rel='noopener'><Eye className="w-5 h-5" /></a>
                     </button>
                     <button className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors">
-                      <a href='{project.url}' target='_blank' rel='noopener' className='bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors'><ExternalLink className="w-5 h-5" /></a>
+                      <a href='{project.url}' target='_blank' rel='noopener'><ExternalLink className="w-5 h-5" /></a>
                     </button>
                   </div>
                 </div>
