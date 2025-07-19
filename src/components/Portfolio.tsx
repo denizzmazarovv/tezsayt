@@ -69,7 +69,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ currentLanguage, projects }) => {
                       <Eye className="w-5 h-5" />
                     </button>
                     <button className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors">
-                      <ExternalLink className="w-5 h-5" />
+                      <a href='{project.url}' target='_blank' rel='noopener' className='bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors'><ExternalLink className="w-5 h-5" /></a>
                     </button>
                   </div>
                 </div>
