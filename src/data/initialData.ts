@@ -13,7 +13,7 @@ export const initialProjects: Project[] = [
       en: 'Modern online store with convenient catalog and payment system',
       uz: 'Qulay katalog va to\'lov tizimi bilan zamonaviy onlayn do\'kon'
     },
-    image: 'https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/public/images/razor.png',
     category: 'ecommerce',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
     url: '#'
