@@ -4,19 +4,19 @@ export const initialProjects: Project[] = [
   {
     id: '1',
     title: {
-      ru: 'Интернет-магазин электроники',
-      en: 'Electronics Online Store',
-      uz: 'Elektronika onlayn do\'koni'
+      ru: 'Мужской барбершоп',
+      en: 'Mens Barbershop',
+      uz: 'Erkaklar sartaroshxonasi'
     },
     description: {
-      ru: 'Современный интернет-магазин с удобной системой каталога и оплаты',
-      en: 'Modern online store with convenient catalog and payment system',
-      uz: 'Qulay katalog va to\'lov tizimi bilan zamonaviy onlayn do\'kon'
+      ru: 'Современный сайт для барбершопа с онлайн-записью прямо в Telegram и наглядным прайсом',
+      en: 'Modern barbershop website with instant booking to Telegram and a clear price list',
+      uz: 'Zamonaviy barber-shop sayti: Telegram’ga tezkor yozilish va ochiq narxlar ro‘yxati'
     },
     image: '/public/images/razor.png',
     category: 'ecommerce',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    url: '#'
+    technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
+    url: 'https://barbercraft.netlify.app/'
   },
   {
     id: '2',
