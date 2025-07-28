@@ -21,7 +21,7 @@ const Contact: React.FC<ContactProps> = ({ currentLanguage }) => {
     },
     {
       icon: <FaTelegramPlane className="w-6 h-6" />,
-      value: '@8weblezen',
+      value: '@weblezen',
       href: 'https://t.me/weblezen'
     },
     {
