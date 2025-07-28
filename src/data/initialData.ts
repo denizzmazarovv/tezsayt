@@ -136,9 +136,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Premium'
     },
     price: {
-      ru: 'от 1500$',
-      en: 'from $1500',
-      uz: '1500$ dan'
+      ru: 'от 700$',
+      en: 'from 700',
+      uz: '700$ dan'
     },
     features: {
       ru: [

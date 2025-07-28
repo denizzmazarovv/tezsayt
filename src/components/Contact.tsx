@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
 import SecureContactForm from './SecureContactForm';
+import { FaTelegramPlane } from "react-icons/fa";
 
 interface ContactProps {
   currentLanguage: Language;
@@ -15,8 +16,13 @@ const Contact: React.FC<ContactProps> = ({ currentLanguage }) => {
     {
       icon: <Phone className="w-6 h-6" />,
       label: t.contact.phone,
-      value: '+998 90 939 12 16',
-      href: 'tel:+998909391216'
+      value: '+998 94 171 71 94',
+      href: 'tel:+998941717194'
+    },
+    {
+      icon: <FaTelegramPlane className="w-6 h-6" />,
+      value: '@8weblezen',
+      href: 'https://t.me/weblezen'
     },
     {
       icon: <Mail className="w-6 h-6" />,
