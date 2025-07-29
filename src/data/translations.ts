@@ -1,5 +1,17 @@
 export const translations = {
   ru: {
+    form: {
+      formName: 'Имя *',
+      formTelephone: 'Телефон',
+      formMessage:'Сообщение *',
+      formSendError:'Ошибка отправки сообщения. Попробуйте позже.',
+      formMessageSucces: 'Сообщение отправлено!',
+      formWeTypeYou:'Мы свяжемся с вами в ближайшее время',
+      formSentRepeatMessage:'Отправить еще одно сообщение',
+      formInputName: 'Ваше имя',
+      formInputMessage:'Расскажите о вашем проекте...',
+      formSending:'Отправка...'
+    },
     navigation: {
       home: 'Главная',
       about: 'О нас',
@@ -45,6 +57,7 @@ export const translations = {
       ecommerce: 'Магазины'
     },
     pricing: {
+      popular: 'Популярный',
       title: 'Тарифы',
       subtitle: 'Выберите подходящий тариф для вашего проекта',
       basic: {
@@ -70,6 +83,7 @@ export const translations = {
           '3 месяца технической поддержки'
         ]
       },
+      
       premium: {
         name: 'Премиум',
         price: 'от 1500$',
@@ -108,6 +122,18 @@ export const translations = {
     }
   },
   en: {
+    form: {
+      formName: 'Name *',
+      formTelephone: 'Phone',
+      formMessage: 'Message *',
+      formSendError: 'Message sending failed. Please try again later.',
+      formMessageSucces: 'Message sent!',
+      formWeTypeYou: 'We will contact you shortly',
+      formSentRepeatMessage: 'Send another message',
+      formInputName: 'Your name',
+      formInputMessage: 'Tell us about your project...',
+      formSending: 'Sending...',
+    },
     navigation: {
       home: 'Home',
       about: 'About',
@@ -153,6 +179,7 @@ export const translations = {
       ecommerce: 'Stores'
     },
     pricing: {
+      popular: 'Popular',
       title: 'Pricing',
       subtitle: 'Choose the right plan for your project',
       basic: {
@@ -216,6 +243,18 @@ export const translations = {
     }
   },
   uz: {
+    form: {
+      formName: 'Ism *',
+      formTelephone: 'Telefon',
+      formMessage: 'Xabar *',
+      formSendError: 'Xabar yuborishda xatolik. Keyinroq urinib ko‘ring.',
+      formMessageSucces: 'Xabar yuborildi!',
+      formWeTypeYou: 'Yaqin orada siz bilan bog‘lanamiz',
+      formSentRepeatMessage: 'Yana bir xabar yuborish',
+      formInputName: 'Ismingiz',
+      formInputMessage: 'Loyihangiz haqida yozing...',
+      formSending: 'Yuborilmoqda...',
+    },
     navigation: {
       home: 'Bosh sahifa',
       about: 'Biz haqimizda',
@@ -261,6 +300,7 @@ export const translations = {
       ecommerce: 'Do\'konlar'
     },
     pricing: {
+      popular: 'Mashhur',
       title: 'Tariflar',
       subtitle: 'Loyihangiz uchun mos tarifni tanlang',
       basic: {

@@ -37,7 +37,7 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
                     <Star className="w-4 h-4" />
-                    Популярный
+                    {t.pricing.popular}
                   </div>
                 </div>
               )}
