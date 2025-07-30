@@ -50,8 +50,8 @@ const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
+            <div className='w-12'>
+              <img src="/images/webLezenLogo.png" alt="" />
             </div>
             <span className={`text-xl font-bold transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'

@@ -16,7 +16,7 @@ export const initialProjects: Project[] = [
     image: '/images/razor.webp',
     category: 'landing',
     technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
-    url: 'https://barbercraft.netlify.app/'
+    url: 'https://razorcraft.netlify.app/'
   },
   {
     id: '2',
