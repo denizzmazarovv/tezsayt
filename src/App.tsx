@@ -14,6 +14,7 @@ import Contact from './components/Contact';
 import AdminRoute from './components/AdminRoute';
 import Footer from './components/Footer';
 
+
 function App() {
   const { currentLanguage, changeLanguage } = useLanguage();
   const [projects, setProjects] = useState<Project[]>(initialProjects);
@@ -38,7 +39,7 @@ function App() {
         <Contact currentLanguage={currentLanguage} />
       </main>
 
-      <Footer />
+      <Footer currentLanguage={currentLanguage} />
     </>
   );
 

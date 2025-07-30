@@ -1,9 +1,9 @@
 export const translations = {
   ru: {
     form: {
-      formName: 'Имя *',
+      formName: 'Имя ',
       formTelephone: 'Телефон',
-      formMessage:'Сообщение *',
+      formMessage:'Сообщение ',
       formSendError:'Ошибка отправки сообщения. Попробуйте позже.',
       formMessageSucces: 'Сообщение отправлено!',
       formWeTypeYou:'Мы свяжемся с вами в ближайшее время',
@@ -119,13 +119,18 @@ export const translations = {
       category_field: 'Категория',
       technologies_field: 'Технологии (через запятую)',
       url_field: 'Ссылка на проект'
+    },
+    footer: {
+      text: 'Создаем современные веб-решения для вашего бизнеса. Качественные сайты, лендинги и интернет-магазины',
+      contact: 'Контакты',
+      copyright: 'Все права защищены'
     }
   },
   en: {
     form: {
-      formName: 'Name *',
+      formName: 'Name ',
       formTelephone: 'Phone',
-      formMessage: 'Message *',
+      formMessage: 'Message ',
       formSendError: 'Message sending failed. Please try again later.',
       formMessageSucces: 'Message sent!',
       formWeTypeYou: 'We will contact you shortly',
@@ -240,13 +245,18 @@ export const translations = {
       category_field: 'Category',
       technologies_field: 'Technologies (comma separated)',
       url_field: 'Project URL'
+    },
+    footer: {
+      text: 'We create modern web solutions for your business. High-quality websites, landing pages, and online stores',
+      contact: 'Contact',
+      copyright: 'All rights reserved'
     }
   },
   uz: {
     form: {
-      formName: 'Ism *',
+      formName: 'Ismingiz ',
       formTelephone: 'Telefon',
-      formMessage: 'Xabar *',
+      formMessage: 'Xabar ',
       formSendError: 'Xabar yuborishda xatolik. Keyinroq urinib ko‘ring.',
       formMessageSucces: 'Xabar yuborildi!',
       formWeTypeYou: 'Yaqin orada siz bilan bog‘lanamiz',
@@ -361,6 +371,11 @@ export const translations = {
       category_field: 'Kategoriya',
       technologies_field: 'Texnologiyalar (vergul bilan ajratilgan)',
       url_field: 'Loyiha havolasi'
+    },
+    footer: {
+      text: 'Biznesingiz uchun zamonaviy veb-yechimlarni yaratamiz. Sifatli saytlar, landing sahifalar va internet doʻkonlar',
+      contact: 'Aloqa',
+      copyright: 'Barcha huquqlar himoyalangan'
     }
   }
 };

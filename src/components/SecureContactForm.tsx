@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { translations } from '../data/translations';
-
-const currentLanguage: 'ru' | 'en' | 'uz' = 'ru';
-const t = translations[currentLanguage];
+import { Language } from '../types';
 
 interface ContactFormData {
   name: string;
@@ -46,7 +44,11 @@ const recordSubmission = () => {
   localStorage.setItem("successfulSubmissions", JSON.stringify(submissions));
 };
 
-const SecureContactForm: React.FC = () => {
+interface SecureContactFormProps {
+  currentLanguage: Language;
+}
+
+const SecureContactForm: React.FC<SecureContactFormProps> = ({ currentLanguage }) => {
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -58,18 +60,18 @@ const SecureContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Безопасное получение переводов
+  const t = translations[currentLanguage]?.form || translations.ru.form;
+
   const validateForm = (): boolean => {
     const newErrors: Record<string, string> = {};
 
-    if (!validateInput(formData.name, 100)) newErrors.name = t.form.formInputName;
-    if (formData.email && !validateEmail(formData.email)) {
-      newErrors.email = 'Введите корректный email';
-    }
-    
-    if (!validateInput(formData.message, 1000)) newErrors.message = t.form.formInputMessage;
-    if (formData.phone && !validatePhone(formData.phone)) newErrors.phone = 'Неверный телефон';
+    if (!validateInput(formData.name, 100)) newErrors.name = t.formInputName;
+    if (!validateInput(formData.message, 1000)) newErrors.message = t.formInputMessage;
+    if (formData.phone && !validatePhone(formData.phone)) newErrors.phone = t.formTelephone;
+    if (formData.email && !validateEmail(formData.email)) newErrors.email = t.formTelephone;
 
-    if (isRateLimited()) newErrors.submit = "⛔ Лимит: не более 5 заявок за 10 минут.";
+    if (isRateLimited()) newErrors.submit = t.formSendError;
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -108,11 +110,11 @@ const SecureContactForm: React.FC = () => {
         setSubmitted(true);
         setFormData({ name: '', email: '', message: '', phone: '' });
       } else {
-        setErrors({ submit: "⚠️ Ошибка сервера." });
+        setErrors({ submit: t.formSendError });
       }
     } catch (err) {
       console.error(err);
-      setErrors({ submit: "❌ Ошибка при отправке." });
+      setErrors({ submit: t.formSendError });
     } finally {
       setIsSubmitting(false);
     }
@@ -124,13 +126,13 @@ const SecureContactForm: React.FC = () => {
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <Send className="w-8 h-8 text-green-600" />
         </div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{t.form.formMessageSucces}</h3>
-        <p className="text-gray-600 mb-4">{t.form.formWeTypeYou}</p>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">{t.formMessageSucces}</h3>
+        <p className="text-gray-600 mb-4">{t.formWeTypeYou}</p>
         <button
           onClick={() => setSubmitted(false)}
           className="text-purple-600 hover:text-purple-700 font-medium"
         >
-          {t.form.formSentRepeatMessage}
+          {t.formSentRepeatMessage}
         </button>
       </div>
     );
@@ -144,34 +146,66 @@ const SecureContactForm: React.FC = () => {
             {errors.submit}
           </div>
         )}
+        
         <div className="grid gap-6">
-          <InputField
-            label={t.form.formName}
-            type="text"
-            value={formData.name}
-            onChange={(v) => handleInputChange("name", v)}
-            placeholder={t.form.formInputName}
-            error={errors.name}
-          />
-          <InputField
-            label="Email"
-            type="email"
-            value={formData.email}
-            onChange={(v) => handleInputChange("email", v)}
-            placeholder="example@mail.com"
-            error={errors.email}
-          />
-          <InputField
-            label="Телефон"
-            type="tel"
-            value={formData.phone || ""}
-            onChange={(v) => handleInputChange("phone", v)}
-            placeholder="+998 90 123 45 67"
-            error={errors.phone}
-          />
+          {/* Поле имени */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              {t.form.formMessage}
+              {t.formName}
+              <span className="text-red-500"> *</span>
+            </label>
+            <input
+              type="text"
+              value={formData.name}
+              onChange={(e) => handleInputChange('name', e.target.value)}
+              className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 ${
+                errors.name ? 'border-red-500' : 'border-gray-300'
+              }`}
+              placeholder={t.formInputName}
+              required
+            />
+            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+          </div>
+
+          {/* Поле email */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              value={formData.email}
+              onChange={(e) => handleInputChange('email', e.target.value)}
+              className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 ${
+                errors.email ? 'border-red-500' : 'border-gray-300'
+              }`}
+              placeholder="example@mail.com"
+            />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          </div>
+
+          {/* Поле телефона */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t.formTelephone}
+            </label>
+            <input
+              type="tel"
+              value={formData.phone || ""}
+              onChange={(e) => handleInputChange('phone', e.target.value)}
+              className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 ${
+                errors.phone ? 'border-red-500' : 'border-gray-300'
+              }`}
+              placeholder="+998 90 123 45 67"
+            />
+            {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+          </div>
+
+          {/* Поле сообщения */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              {t.formMessage}
+              <span className="text-red-500"> *</span>
             </label>
             <textarea
               rows={6}
@@ -180,60 +214,29 @@ const SecureContactForm: React.FC = () => {
               className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 resize-none ${
                 errors.message ? 'border-red-500' : 'border-gray-300'
               }`}
-              placeholder={t.form.formInputMessage}
+              placeholder={t.formInputMessage}
               required
               maxLength={1000}
             />
-            {errors.message && (
-              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-            )}
+            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
             <div className="text-right text-sm text-gray-500 mt-1">
               {formData.message.length}/1000
             </div>
           </div>
         </div>
+
+        {/* Кнопка отправки */}
         <button
           type="submit"
           disabled={isSubmitting}
           className="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <Send className="w-5 h-5" />
-          {isSubmitting ? t.form.formSending : 'Отправить сообщение'}
+          {isSubmitting ? t.formSending : t.formMessage}
         </button>
       </form>
     </div>
   );
 };
-
-const InputField = ({
-  label,
-  type,
-  value,
-  onChange,
-  placeholder,
-  error
-}: {
-  label: string;
-  type: string;
-  value: string;
-  onChange: (v: string) => void;
-  placeholder: string;
-  error?: string;
-}) => (
-  <div>
-    <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
-    <input
-      type={type}
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 ${
-        error ? 'border-red-500' : 'border-gray-300'
-      }`}
-      placeholder={placeholder}
-      required={type !== 'email'}
-    />
-    {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
-  </div>
-);
 
 export default SecureContactForm;

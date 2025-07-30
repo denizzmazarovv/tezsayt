@@ -72,7 +72,7 @@ const Contact: React.FC<ContactProps> = ({ currentLanguage }) => {
           </div>
 
           {/* Contact Form */}
-          <SecureContactForm />
+          <SecureContactForm currentLanguage={currentLanguage} />
         </div>
       </div>
     </section>
