@@ -38,19 +38,19 @@ export const initialProjects: Project[] = [
   {
     id: '3',
     title: {
-      ru: 'Корпоративный сайт ресторана',
-      en: 'Restaurant Corporate Website',
-      uz: 'Restoran korporativ veb-sayti'
+      ru: 'Строительная компания Stroy Master',
+      en: 'Construction Company Stroy Master',
+      uz: 'Qurilish kompaniyasi Stroy Master'
     },
     description: {
-      ru: 'Элегантный сайт ресторана с онлайн-бронированием столиков',
-      en: 'Elegant restaurant website with online table booking',
-      uz: 'Onlayn stol bron qilish bilan nafis restoran veb-sayti'
+      ru: 'Профессиональный сайт в виде презентации',
+      en: 'Professional website in the form of a presentation',
+      uz: 'Taqdimot tarzidagi professional veb-sayt'
     },
-    image: 'https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/images/stroyMaster.webp',
     category: 'website',
-    technologies: ['Vue.js', 'Laravel', 'MySQL'],
-    url: '#'
+    technologies: ['React', 'GoogleApi', 'TelegramApi', 'Nest js'],
+    url: 'https://webstroymaster.netlify.app/'
   }
 ];
 
