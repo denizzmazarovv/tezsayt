@@ -18,8 +18,8 @@ const Footer: React.FC<FooterProps> = ({ currentLanguage }) => {
           {/* Logo & Description */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-500 rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-white" />
+              <div className="w-12">
+              <img src="/images/webLezenLogo.png" alt="" />
               </div>
               <span className="text-xl font-bold">Web Lezen</span>
             </div>
