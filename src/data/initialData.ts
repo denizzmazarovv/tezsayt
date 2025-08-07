@@ -38,18 +38,18 @@ export const initialProjects: Project[] = [
   {
     id: '3',
     title: {
-      ru: 'Строительная компания Stroy Master',
-      en: 'Construction Company Stroy Master',
-      uz: 'Qurilish kompaniyasi Stroy Master'
+      ru: 'Корпоративный сайт ресторана',
+      en: 'Restaurant Corporate Website',
+      uz: 'Restoran korporativ veb-sayti'
     },
     description: {
-      ru: 'Профессиональный сайт в виде презентации',
-      en: 'Professional website in the form of a presentation',
-      uz: 'Taqdimot tarzidagi professional veb-sayt'
+      ru: 'Элегантный сайт ресторана с онлайн-бронированием столиков',
+      en: 'Elegant restaurant website with online table booking',
+      uz: 'Onlayn stol bron qilish bilan nafis restoran veb-sayti'
     },
     image: '/images/stroyMaster.webp',
     category: 'website',
-    technologies: ['React', 'GoogleApi', 'TelegramApi', 'Nest js'],
+    technologies: ['Vue.js', 'Laravel', 'MySQL'],
     url: 'https://webstroymaster.netlify.app/'
   }
 ];
@@ -63,9 +63,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Zarurlii'
     },
     price: {
-      ru: 'от 100$',
-      en: 'from $100',
-      uz: '100$ dan'
+      ru: '1.500.000 сум',
+      en: '1.500.000 sum',
+      uz: '1.500.000 sum'
     },
     features: {
       ru: [

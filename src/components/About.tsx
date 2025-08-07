@@ -10,23 +10,7 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ currentLanguage }) => {
   const t = translations[currentLanguage];
 
-  const stats = [
-    {
-      icon: <Award className="w-8 h-8" />,
-      value: '3+',
-      label: t.about.experience
-    },
-    {
-      icon: <Briefcase className="w-8 h-8" />,
-      value: '35+',
-      label: t.about.projects
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      value: '35+',
-      label: t.about.clients
-    }
-  ];
+
 
   return (
     <section id="about" className="py-20 bg-gray-50">
@@ -42,21 +26,7 @@ const About: React.FC<AboutProps> = ({ currentLanguage }) => {
             </p>
             
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="bg-gradient-to-r from-purple-600 to-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                    {stat.icon}
-                  </div>
-                  <div className="text-2xl font-bold text-gray-900 mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
+            
           </div>
 
           {/* Image */}
