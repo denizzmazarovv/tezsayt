@@ -56,8 +56,15 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
                   {plan.name[currentLanguage]}
                 </h3>
-                <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent mb-2">
-                  {plan.price[currentLanguage]}
+                <div className="text-4xl font-bold mb-2">
+                  {plan.price[currentLanguage].old && (
+                    <span className="line-through text-gray-400 mr-2">
+                      {plan.price[currentLanguage].old}
+                    </span>
+                  )}
+                  <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                    {plan.price[currentLanguage].new}
+                  </span>
                 </div>
               </div>
 

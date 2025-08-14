@@ -63,9 +63,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Zarurlii'
     },
     price: {
-      ru: '1.500.000 сум',
-      en: '1.500.000 sum',
-      uz: '1.500.000 sum'
+      ru: '1.5 млн сум',
+      en: '1.5 mln sum',
+      uz: '1.5 mln sum'
     },
     features: {
       ru: [
@@ -96,34 +96,34 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Individual'
     },
     price: {
-      ru: 'от 150-300$',
-      en: 'from $150-300',
-      uz: '150-300$ dan'
+      ru: { old: '4.3 млн', new: '3 млн сум' },
+      en: { old: '4.3 mln', new: '3 mln sum' },
+      uz: { old: '4.3 mln', new: '3 mln sum' }
     },
     features: {
       ru: [
-        '0$ - Тариф (необходимый)',
-        '50$ — Мульти-язычность RU, UZB, ENG',
+        '120$ - Тариф (необходимый)',
+        '70$ — Мульти-язычность RU, UZB, ENG',
         '50$ — Форма отправки в Телеграм + Таблицу',
-        'Полная оптимизация',
-        'Админ-панель',
+        '100$ - Дизайнерская плата',
+        '80$ - Админ-панель',
         'Интеграции с сервисами'
       ],
       en: [
-        '0$ - Package (required)',
-        '$50 — Multilanguage: RU, UZB, ENG',
-        '$50 — Form submission to Telegram + Spreadsheet',
-        'Full optimization',
-        'Admin panel',
-        'Service integrations',
+        '$120 — Base plan (required)',
+        '$70 — Multi-language RU, UZB, ENG',
+        '$50 — Contact form to Telegram + Google Sheets',
+        '$100 — Design fee',
+        '80$ - Admin panel',
+        'Integrations with services'
       ],
       uz: [
-        '0$ - Tarif (majburiy)',
-        '50$ — Ko‘p tilli: RU, UZB, ENG',
+        '120$ — Asosiy tarif (majburiy)',
+        '70$ — Ko‘p tillilik RU, UZB, ENG',
         '50$ — Telegram va Jadvalga yuborish formasi',
-        'To‘liq optimizatsiya',
-        'Admin panel',
-        'Xizmatlarga integratsiya',
+        '100$ — Dizaynerlik to‘lovi',
+        '80$ - Admin panel',
+        'Xizmatlarga integratsiya'
       ]
     },
     highlighted: true
@@ -137,7 +137,7 @@ export const pricingPlans: PricingPlan[] = [
     },
     price: {
       ru: 'от 700$',
-      en: 'from 700',
+      en: 'from 700$',
       uz: '700$ dan'
     },
     features: {
@@ -158,8 +158,8 @@ export const pricingPlans: PricingPlan[] = [
         '6 months technical support'
       ],
       uz: [
-        'Onlayn do\'kon',
-        'To\'lov tizimi',
+        "Onlayn do'kon",
+        "To'lov tizimi",
         'Buyurtmalarni boshqarish',
         'CRM bilan integratsiya',
         'Mobil ilova',
