@@ -11,6 +11,16 @@ interface PricingProps {
 const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
   const t = translations[currentLanguage];
 
+  // Универсальная функция для скролла к секции
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      console.warn(`Секция с id='${sectionId}' не найдена`);
+    }
+  };
+
   return (
     <section id="pricing" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,6 +73,7 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
               </ul>
 
               <button
+                onClick={() => scrollToSection('contact')}
                 className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 ${
                   plan.highlighted
                     ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:shadow-lg hover:shadow-purple-500/25'
