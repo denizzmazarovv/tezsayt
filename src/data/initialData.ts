@@ -130,9 +130,9 @@ export const pricingPlans: PricingPlan[] = [
   {
     id: 'standard',
     name: {
-      ru: 'Оптимальный',
-      en: 'Optimal',
-      uz: 'Optimal'
+      "ru": "Популярный",
+      "en": "Popular",
+      "uz": "Ommabop"
     },
     price: {
       ru: '30$/мес или 200$',
