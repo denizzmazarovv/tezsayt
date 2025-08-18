@@ -96,9 +96,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Individual'
     },
     price: {
-      ru: { old: '4.3 млн', new: '3 млн сум' },
-      en: { old: '4.3 mln', new: '3 mln sum' },
-      uz: { old: '4.3 mln', new: '3 mln sum' }
+      ru: '200$',
+      en: '200$',
+      uz: '200$'
     },
     features: {
       ru: [

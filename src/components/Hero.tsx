@@ -26,8 +26,21 @@ const Hero: React.FC<HeroProps> = ({ currentLanguage }) => {
 
   return (
     <section id="home" className="min-h-screen relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-purple-700 to-blue-500">
+      {/* Background with images */}
+      <div className="absolute inset-0">
+        {/* Desktop image */}
+        <img
+          src="/images/"
+          alt="Hero desktop"
+          className="hidden md:block w-full h-full object-cover"
+        />
+        {/* Mobile image */}
+        <img
+          src="/images/hero-mobile.jpg"
+          alt="Hero mobile"
+          className="block md:hidden w-full h-full object-cover"
+        />
+        {/* Overlays */}
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
       </div>

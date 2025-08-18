@@ -11,7 +11,6 @@ interface PricingProps {
 const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
   const t = translations[currentLanguage];
 
-  // Универсальная функция для скролла к секции
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -57,13 +56,8 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
                   {plan.name[currentLanguage]}
                 </h3>
                 <div className="text-4xl font-bold mb-2">
-                  {plan.price[currentLanguage].old && (
-                    <span className="line-through text-gray-400 mr-2">
-                      {plan.price[currentLanguage].old}
-                    </span>
-                  )}
                   <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-                    {plan.price[currentLanguage].new}
+                    {plan.price[currentLanguage]}
                   </span>
                 </div>
               </div>

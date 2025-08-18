@@ -22,8 +22,8 @@ export const translations = {
       admin: 'Админ'
     },
     hero: {
-      title: 'Создаем современные веб-решения',
-      subtitle: 'Web Lezen - ваш надежный партнер в создании качественных сайтов, лендингов и интернет-магазинов',
+      title: '',
+      subtitle: '',
       cta: 'Начать проект',
       contact: 'Связаться с нами'
     },
@@ -149,8 +149,8 @@ export const translations = {
       admin: 'Admin'
     },
     hero: {
-      title: 'Creating Modern Web Solutions',
-      subtitle: 'Web Lezen - your reliable partner in creating quality websites, landing pages and online stores',
+      title: '',
+      subtitle: '',
       cta: 'Start Project',
       contact: 'Contact Us'
     },
@@ -281,8 +281,8 @@ export const translations = {
       contact: 'Biz bilan bog\'laning'
     },
     about: {
-      title: 'Web Lezen haqida',
-      description: 'Biz zamonaviy va funksional veb yechimlarini yaratishga ixtisoslashganmiz. Bizning professionallar jamoasi sizning g\'oyalaringizni hayotga tatbiq etishda yordam beradi.',
+      title: '',
+      subtitle: '',
       experience: 'Ish tajribasi',
       projects: 'Bajarilgan loyihalar',
       clients: 'Mamnun mijozlar'
