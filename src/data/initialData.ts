@@ -98,71 +98,71 @@ export const pricingPlans: PricingPlan[] = [
     id: 'basic',
     name: {
       ru: 'Необходимый',
-      en: 'Necessary',
-      uz: 'Zarurlii'
+      en: 'Essential',
+      uz: 'Asosiy'
     },
     price: {
-      ru: '1.5 млн сум',
-      en: '1.5 mln sum',
-      uz: '1.5 mln sum'
+      ru: '99$',
+      en: '99$',
+      uz: '99$'
     },
     features: {
       ru: [
-        'Лендинг страница',
+        'Одностраничный лендинг',
         'Адаптивный дизайн',
         'Базовая SEO оптимизация',
-        'Месяц технической поддержки'
+        '1 месяц поддержки'
       ],
       en: [
-        'Landing page',
+        'One-page landing',
         'Responsive design',
         'Basic SEO optimization',
-        'One month technical support'
+        '1 month support'
       ],
       uz: [
-        'Lending sahifa',
+        'Bir sahifali lending',
         'Moslashuvchan dizayn',
         'Asosiy SEO optimallashtirish',
-        'Bir oylik texnik yordam'
+        '1 oylik yordam'
       ]
     }
   },
   {
     id: 'standard',
     name: {
-      ru: 'Индивидуальный',
-      en: 'Individual',
-      uz: 'Individual'
+      ru: 'Оптимальный',
+      en: 'Optimal',
+      uz: 'Optimal'
     },
     price: {
-      ru: '200$',
-      en: '200$',
-      uz: '200$'
+      ru: '30$/мес или 200$',
+      en: '$30/month or $200',
+      uz: '30$/oy yoki 200$'
     },
     features: {
       ru: [
-        '120$ - Тариф (необходимый)',
-        '70$ — Мульти-язычность RU, UZB, ENG',
-        '50$ — Форма отправки в Телеграм + Таблицу',
-        '100$ - Дизайнерская плата',
-        '80$ - Админ-панель',
-        'Интеграции с сервисами'
+        'Полное управление сайтом',
+        'До 3 изменений в месяц',
+        'Домен .UZ и хостинг',
+        'Дизайн сайта',
+        'Разработка сайта',
+        'Интеграции и формы заявок'
       ],
       en: [
-        '$120 — Base plan (required)',
-        '$70 — Multi-language RU, UZB, ENG',
-        '$50 — Contact form to Telegram + Google Sheets',
-        '$100 — Design fee',
-        '80$ - Admin panel',
-        'Integrations with services'
+        'Full website management',
+        'Up to 3 edits per month',
+        '.UZ domain and hosting',
+        'Website design',
+        'Website development',
+        'Integrations & contact forms'
       ],
       uz: [
-        '120$ — Asosiy tarif (majburiy)',
-        '70$ — Ko‘p tillilik RU, UZB, ENG',
-        '50$ — Telegram va Jadvalga yuborish formasi',
-        '100$ — Dizaynerlik to‘lovi',
-        '80$ - Admin panel',
-        'Xizmatlarga integratsiya'
+        'Saytni to‘liq boshqarish',
+        'Oyiga 3 tagacha o‘zgarish',
+        '.UZ domen va hosting',
+        'Sayt dizayni',
+        'Sayt ishlab chiqish',
+        'Integratsiya va murojaat formasi'
       ]
     },
     highlighted: true
@@ -175,34 +175,34 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Premium'
     },
     price: {
-      ru: 'от 700$',
-      en: 'from 700$',
-      uz: '700$ dan'
+      ru: 'от 1000$',
+      en: 'from $1000',
+      uz: '1000$ dan'
     },
     features: {
       ru: [
-        'Интернет-магазин',
-        'Система оплаты',
-        'Управление заказами',
-        'Интеграция с CRM',
-        'Мобильное приложение',
-        '6 месяцев технической поддержки'
+        'Уникальный дизайн',
+        'Логотип и фирменный стиль',
+        'Интеграции с сервисами',
+        'CRM подключение',
+        '3 месяца поддержки',
+
       ],
       en: [
-        'Online store',
-        'Payment system',
-        'Order management',
-        'CRM integration',
-        'Mobile application',
-        '6 months technical support'
+        'Unique design',
+        'Logo & brand identity',
+        'Service integrations',
+        'CRM connection',
+        '3 months support',
+
       ],
       uz: [
-        "Onlayn do'kon",
-        "To'lov tizimi",
-        'Buyurtmalarni boshqarish',
-        'CRM bilan integratsiya',
-        'Mobil ilova',
-        '6 oylik texnik yordam'
+        'Noyob dizayn',
+        'Logo va brend uslubi',
+        'Xizmatlarga integratsiya',
+        'CRM ulanishi',
+        '3 oylik yordam',
+
       ]
     }
   }
