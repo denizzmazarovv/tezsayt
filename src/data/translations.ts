@@ -53,8 +53,7 @@ export const translations = {
       title: 'Наши работы',
       all: 'Все',
       landing: 'Лендинги',
-      website: 'Сайты',
-      ecommerce: 'Магазины'
+      ecommerce: 'Бизнес'
     },
     pricing: {
       popular: 'Популярный',
@@ -177,11 +176,10 @@ export const translations = {
       }
     },
     portfolio: {
-      title: 'Our Work',
+      title: 'Our Works',
       all: 'All',
       landing: 'Landing Pages',
-      website: 'Websites',
-      ecommerce: 'Stores'
+      ecommerce: 'Business'
     },
     pricing: {
       popular: 'Popular',
@@ -305,9 +303,8 @@ export const translations = {
     portfolio: {
       title: 'Bizning ishlarimiz',
       all: 'Barchasi',
-      landing: 'Lending sahifalar',
-      website: 'Veb-saytlar',
-      ecommerce: 'Do\'konlar'
+      landing: 'Landing',
+      ecommerce: 'Biznes'
     },
     pricing: {
       popular: 'Mashhur',

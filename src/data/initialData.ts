@@ -14,7 +14,7 @@ export const initialProjects: Project[] = [
       uz: 'Zamonaviy barber-shop sayti: Telegram’ga tezkor yozilish va ochiq narxlar ro‘yxati'
     },
     image: '/images/razor.webp',
-    category: 'landing',
+    category: 'ecommerce',
     technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
     url: 'https://razorcraft.netlify.app/'
   },
@@ -31,24 +31,43 @@ export const initialProjects: Project[] = [
       uz: 'Go‘zallik saloni uchun sayt: Telegram orqali yozilish va jadvallardan avtomatik yangilanadigan narxlar'
     },
     image: '/images/salonSpa.webp',
-    category: 'landing',
+    category: 'ecommerce',
     technologies: ['React', 'GoogleApi', 'TelegramBotApi'],
     url: 'https://salonbeautyspa.netlify.app/'
   },
   {
     id: '3',
     title: {
-      ru: 'Корпоративный сайт ресторана',
-      en: 'Restaurant Corporate Website',
-      uz: 'Restoran korporativ veb-sayti'
+      ru: 'Сайт для строительной компании',
+      en: 'Website for a construction company',
+      uz: 'Qurilish kompaniyasi uchun sayt'
     },
     description: {
-      ru: 'Элегантный сайт ресторана с онлайн-бронированием столиков',
-      en: 'Elegant restaurant website with online table booking',
-      uz: 'Onlayn stol bron qilish bilan nafis restoran veb-sayti'
-    },
+      ru: 'Современный одностраничный сайт для строительной компании. Включает описание услуг, примеры работ, контакты и форму заявки.',
+      en: 'A modern one-page website for a construction company. Includes services overview, portfolio examples, contact details, and an application form.',
+      uz: 'Qurilish kompaniyasi uchun zamonaviy bir sahifali sayt. Unda xizmatlar tavsifi, ish namunalar, aloqa ma’lumotlari va ariza shakli mavjud.'
+    } ,
+    
     image: '/images/stroyMaster.webp',
-    category: 'website',
+    category: 'ecommerce',
+    technologies: ['Vue.js', 'Laravel', 'MySQL'],
+    url: 'https://webstroymaster.netlify.app/'
+  },
+  {
+    id: '4',
+    title: {
+      ru: 'Сайт для ',
+      en: '',
+      uz: ''
+    },
+    description: {
+      ru: '',
+      en: '',
+      uz: ''
+    } ,
+    
+    image: '/images/stroyMaster.webp',
+    category: 'ecommerce',
     technologies: ['Vue.js', 'Laravel', 'MySQL'],
     url: 'https://webstroymaster.netlify.app/'
   }
