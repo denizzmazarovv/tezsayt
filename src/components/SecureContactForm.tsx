@@ -196,7 +196,7 @@ const SecureContactForm: React.FC<SecureContactFormProps> = ({ currentLanguage }
               className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-purple-500 ${
                 errors.phone ? 'border-red-500' : 'border-gray-300'
               }`}
-              placeholder="+998 90 123 45 67"
+              placeholder="998 XX 000 00 00 | XX 000 00 00"
             />
             {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
           </div>
