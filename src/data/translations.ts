@@ -273,8 +273,8 @@ export const translations = {
       admin: 'Admin'
     },
     hero: {
-      title: 'Zamonaviy veb yechimlari yaratamiz',
-      subtitle: 'Web Lezen - sifatli veb-saytlar, lending sahifalar va onlayn do\'konlar yaratishda ishonchli hamkoringiz',
+      title: '',
+      subtitle: '',
       cta: 'Loyihani boshlash',
       contact: 'Biz bilan bog\'laning'
     },
