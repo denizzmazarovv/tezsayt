@@ -4,6 +4,42 @@ export const initialProjects: Project[] = [
   {
     id: '1',
     title: {
+      ru: 'Презентация Геля',
+      en: 'Gel Presentation',
+      uz: 'Gel taqdimoti'
+    },
+    description: {
+      ru: 'Одностраничный сайт-презентация для косметического геля. Включает описание продукта, преимущества, изображения и форму заявки.',
+      en: 'A one-page presentation website for a cosmetic gel. Includes product description, key benefits, images, and an application form.',
+      uz: 'Kosmetik gel uchun bir sahifali taqdimot sayti. Mahsulot tavsifi, afzalliklari, rasmlar va ariza shaklini o‘z ichiga oladi.'    
+    } ,
+    
+    image: '/images/LaRoche.webp',
+    category: 'landing',
+    technologies: ['Vue.js','React', 'GoogleApi'],
+    url: 'https://larocheuz.netlify.app/'
+  },
+  {
+    id: '2',
+    title: {
+      ru: 'Planet Consulting',
+      en: 'Planet Consulting',
+      uz: 'Planet Consulting'
+    },
+    description: {
+      ru: 'Консалтинговая компания, предоставляющая услуги в 12 странах. Мы помогаем бизнесу развиваться, оптимизировать процессы и выходить на новые рынки.',
+      en: 'A consulting company operating in 12 countries. We help businesses grow, optimize processes, and expand into new markets.',
+      uz: '12 mamlakatda faoliyat yurituvchi konsalting kompaniyasi. Biz biznesga rivojlanishga, jarayonlarni optimallashtirishga va yangi bozorlar ochishga yordam beramiz.'    
+    } ,
+    
+    image: '/images/PlanetConsulting.webp',
+    category: 'ecommerce',
+    technologies: ['Vue.js', 'React', 'GoogleApi', 'TelegramBotApi'],
+    url: 'https://planetconsulting.netlify.app/'
+  },
+  {
+    id: '3',
+    title: {
       ru: 'Мужской барбершоп',
       en: 'Mens Barbershop',
       uz: 'Erkaklar sartaroshxonasi'
@@ -19,7 +55,7 @@ export const initialProjects: Project[] = [
     url: 'https://razorcraft.netlify.app/'
   },
   {
-    id: '2',
+    id: '4',
     title: {
       ru: 'Сайт, который заменяет администратора',
       en: 'A site that replaces the administrator',
@@ -36,7 +72,7 @@ export const initialProjects: Project[] = [
     url: 'https://salonbeautyspa.netlify.app/'
   },
   {
-    id: '3',
+    id: '5',
     title: {
       ru: 'Сайт для строительной компании',
       en: 'Website for a construction company',
@@ -53,24 +89,8 @@ export const initialProjects: Project[] = [
     technologies: ['Vue.js', 'Laravel', 'MySQL'],
     url: 'https://webstroymaster.netlify.app/'
   },
-  {
-    id: '4',
-    title: {
-      ru: 'Сайт для ',
-      en: '',
-      uz: ''
-    },
-    description: {
-      ru: '',
-      en: '',
-      uz: ''
-    } ,
-    
-    image: '/images/stroyMaster.webp',
-    category: 'ecommerce',
-    technologies: ['Vue.js', 'Laravel', 'MySQL'],
-    url: 'https://webstroymaster.netlify.app/'
-  }
+
+
 ];
 
 export const pricingPlans: PricingPlan[] = [
