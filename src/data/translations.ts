@@ -56,7 +56,7 @@ export const translations = {
       ecommerce: 'Бизнес'
     },
     pricing: {
-      popular: 'Популярный',
+      popular: 'Временный',
       title: 'Тарифы',
       subtitle: 'Выберите подходящий тариф для вашего проекта',
       basic: {
@@ -182,7 +182,7 @@ export const translations = {
       ecommerce: 'Business'
     },
     pricing: {
-      popular: 'Popular',
+      popular: 'Temporary',
       title: 'Pricing',
       subtitle: 'Choose the right plan for your project',
       basic: {
@@ -307,7 +307,7 @@ export const translations = {
       ecommerce: 'Biznes'
     },
     pricing: {
-      popular: 'Mashhur',
+      popular: 'Vaqtinchalik',
       title: 'Tariflar',
       subtitle: 'Loyihangiz uchun mos tarifni tanlang',
       basic: {
