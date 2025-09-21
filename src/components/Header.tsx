@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({
             <span className={`text-xl font-bold transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              Tez Sayt
+               Web Lezen
             </span>
           </div>
 
