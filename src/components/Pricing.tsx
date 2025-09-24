@@ -36,7 +36,7 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
           {pricingPlans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative bg-white rounded-2xl p-8 border-2 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
+              className={`relative flex flex-col bg-white rounded-2xl p-8 border-2 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
                 plan.highlighted
                   ? 'border-purple-500 shadow-xl scale-105'
                   : 'border-gray-200 hover:border-purple-300'
@@ -75,7 +75,7 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className={`w-full py-4 rounded-xl mb-4 font-semibold transition-all duration-300 ${
+                className={`w-full py-4 mt-auto rounded-xl mb-4 font-semibold transition-all duration-300 ${
                   plan.highlighted
                     ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:shadow-lg hover:shadow-purple-500/25'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
