@@ -22,8 +22,8 @@ export const translations = {
       admin: 'Админ'
     },
     hero: {
-      title: '',
-      subtitle: '',
+      title: 'Профессиональные сайты с упором на скорость и безопасность',
+      subtitle: 'Мы делаем сайты, которые работают на ваш бизнес 24/7',
       cta: 'Начать проект',
       contact: 'Связаться с нами'
     },
@@ -148,8 +148,8 @@ export const translations = {
       admin: 'Admin'
     },
     hero: {
-      title: '',
-      subtitle: '',
+      title: 'Professional websites built for speed and security',
+      subtitle: 'We build websites that work for your business 24/7',
       cta: 'Start Project',
       contact: 'Contact Us'
     },
@@ -273,8 +273,8 @@ export const translations = {
       admin: 'Admin'
     },
     hero: {
-      title: '',
-      subtitle: '',
+      title: 'Tezlik va xavfsizlikka eʼtibor qaratilgan professional saytlar',
+      subtitle: 'Biz 24/7 biznesingiz uchun ishlaydigan saytlar yaratamiz',
       cta: 'Loyihani boshlash',
       contact: 'Biz bilan bog\'laning'
     },
