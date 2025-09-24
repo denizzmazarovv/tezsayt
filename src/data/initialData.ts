@@ -102,9 +102,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Asosiy'
     },
     price: {
-      ru: '99$',
-      en: '99$',
-      uz: '99$'
+      ru: '1 500 000 сум',
+      en: '1 500 000 sum',
+      uz: '1 500 000 sum'
     },
     features: {
       ru: [
@@ -135,9 +135,9 @@ export const pricingPlans: PricingPlan[] = [
       "uz": "Ommabop"
     },
     price: {
-      ru: '30$/мес или 200$',
-      en: '$30/month or $200',
-      uz: '30$/oy yoki 200$'
+      ru: '2 500 000 сум',
+      en: '2 500 000 sum',
+      uz: '2 500 000 sum'
     },
     features: {
       ru: [
@@ -175,9 +175,9 @@ export const pricingPlans: PricingPlan[] = [
       uz: 'Premium'
     },
     price: {
-      ru: 'от 1000$',
-      en: 'from $1000',
-      uz: '1000$ dan'
+      ru: '5 500 000 сум',
+      en: '5 500 000 sum',
+      uz: '5 500 000 sum'
     },
     features: {
       ru: [
