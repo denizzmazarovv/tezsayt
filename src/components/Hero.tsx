@@ -30,13 +30,13 @@ const Hero: React.FC<HeroProps> = ({ currentLanguage }) => {
       <div className="absolute inset-0">
         {/* Desktop image */}
         <img
-          src="/images/header_pk.webp"
+          src="/images/header_pc"
           alt="Hero desktop"
           className="hidden md:block w-full h-full object-cover"
         />
         {/* Mobile image */}
         <img
-          src="/images/header_mb.webp"
+          src="/images/header_mb"
           alt="Hero mobile"
           className="block md:hidden w-full h-full object-cover"
         />
