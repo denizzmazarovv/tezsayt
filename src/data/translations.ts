@@ -28,7 +28,7 @@ export const translations = {
       contact: 'Связаться с нами'
     },
     about: {
-      title: 'О компании Web Lezen',
+      title: 'О компании Tez Sayt',
       description: 'Мы специализируемся на создании современных и функциональных веб-решений. Наша команда профессионалов поможет воплотить ваши идеи в жизнь.',
       experience: 'Опыт работы',
       projects: 'Проектов выполнено',
@@ -154,7 +154,7 @@ export const translations = {
       contact: 'Contact Us'
     },
     about: {
-      title: 'About Web Lezen',
+      title: 'About Tez Sayt',
       description: 'We specialize in creating modern and functional web solutions. Our team of professionals will help bring your ideas to life.',
       experience: 'Years of Experience',
       projects: 'Projects Completed',
@@ -279,9 +279,9 @@ export const translations = {
       contact: 'Biz bilan bog\'laning'
     },
     about: {
-      title: '',
-      subtitle: '',
-      experience: 'Ish tajribasi',
+      title: 'Tez Sayt haqida',
+      description: 'Biz zamonaviy va funksional veb yechimlarni yaratishga ixtisoslashganmiz. Bizning mutaxassislar jamoamiz sizning g‘oyalaringizni hayotga tatbiq etishga yordam beradi.',
+      experience: 'Tajriba yillari',
       projects: 'Bajarilgan loyihalar',
       clients: 'Mamnun mijozlar'
     },

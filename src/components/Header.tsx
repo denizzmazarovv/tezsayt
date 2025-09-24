@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className='w-12'>
-              <img src="/images/webLezenLogo.png" alt="" />
+              <img src="/images/tezsayt_logo.png" alt="" />
             </div>
             <span className={`text-xl font-bold transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'
