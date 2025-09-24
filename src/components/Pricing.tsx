@@ -75,7 +75,7 @@ const Pricing: React.FC<PricingProps> = ({ currentLanguage }) => {
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 ${
+                className={`w-full py-4 rounded-xl mb-4 font-semibold transition-all duration-300 ${
                   plan.highlighted
                     ? 'bg-gradient-to-r from-purple-600 to-blue-500 text-white hover:shadow-lg hover:shadow-purple-500/25'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
