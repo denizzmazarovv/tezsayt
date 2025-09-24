@@ -28,14 +28,14 @@ const Footer: React.FC<FooterProps> = ({ currentLanguage }) => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://t.me/web_lezen"
+                href="https://t.me/tezsayt"
                 className="text-gray-400 hover:text-purple-400 transition-colors"
                 aria-label="Telegram"
               >
                 <FaTelegramPlane className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/web_lezen/"
+                href="https://www.instagram.com/tezsayt/"
                 className="text-gray-400 hover:text-purple-400 transition-colors"
                 aria-label="Instagram"
               >
@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({ currentLanguage }) => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Web Lezen. {t.footer.copyright}</p>
+          <p>&copy; 2025 Tez Sayt. {t.footer.copyright}</p>
         </div>
       </div>
     </footer>
