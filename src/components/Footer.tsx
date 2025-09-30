@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({ currentLanguage }) => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-12">
-              <img src="/images/tezsayt_logo_white.png" alt="" />
+              <img src="/images/logo_png_gradient.png" alt="" />
               </div>
               <span className="text-xl font-bold">Tez Sayt</span>
             </div>
